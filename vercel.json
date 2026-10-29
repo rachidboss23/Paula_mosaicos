@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/mosaicos-artisticos-en-ceramica", "destination": "/galeria", "permanent": true },
+    { "source": "/mosaicos-artisticos-en-ceramica/", "destination": "/galeria", "permanent": true },
+    { "source": "/blog-de-ceramica-y-mosaicos-paula-guerra-chamorro", "destination": "/blog", "permanent": true },
+    { "source": "/blog-de-ceramica-y-mosaicos-paula-guerra-chamorro/", "destination": "/blog", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+  ]
+}
